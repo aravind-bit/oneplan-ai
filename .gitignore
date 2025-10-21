@@ -1,6 +1,5 @@
-.venv
-.ipynb_checkpoints
-__pycache__
+.venv/
+__pycache__/
+.ipynb_checkpoints/
 .DS_Store
-data/processed/*.parquet
-
+*.pyc
