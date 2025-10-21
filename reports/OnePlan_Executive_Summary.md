@@ -8,7 +8,7 @@ We optimized cross-channel budget to maximize **conversions** (and evaluated **d
 - **Deduped reach lift vs equal split:** **0.0%**  
 
 ## Why the optimizer shifted budget
-- Channels with the **highest marginal ROI at the optimum** (extra conversions per $1): **Display, YouTube, LinearTV**  
+- Channels with the **highest marginal ROI at the optimum** (extra conversions per $1): **LinearTV, Streaming, YouTube**  
 - Channels with **lower marginal ROI** are relatively **saturated** at the current CPMs.
 
 ## Key Figures
