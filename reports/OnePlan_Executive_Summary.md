@@ -1,24 +1,14 @@
 # OnePlan — Executive Summary (Part 6)
 
-**What changed:**  
-We optimized cross-channel budget to maximize **conversions** (and evaluated **deduped reach** separately).
+**Conversions:** equal=111.92, optimized=121.43, lift=**8.49%**  
+**Deduped Reach:** equal=61.1%, optimized=45.8%, lift=**-24.95%**
 
-## Headline Results
-- **Modeled conversions lift vs equal split:** **0.0%**  
-- **Deduped reach lift vs equal split:** **0.0%**  
+**Why the optimizer moved budget**  
+- Channels with highest **marginal ROI** at the optimum: Streaming, YouTube, LinearTV.
+- Budget shifted toward these channels to maximize conversions.
 
-## Why the optimizer shifted budget
-- Channels with the **highest marginal ROI at the optimum** (extra conversions per $1): **LinearTV, Streaming, YouTube**  
-- Channels with **lower marginal ROI** are relatively **saturated** at the current CPMs.
-
-## Key Figures
-- Optimal spend allocation (Conversions): `assets/p6_opt_spend_conversions.png`
-- Marginal ROI at optimum: `assets/p6_marginal_roi.png`
-- Equal vs Optimized (Conversions): `assets/p6_equal_vs_opt_conversions.png`
-- Equal vs Optimized (Deduped Reach): `assets/p6_equal_vs_opt_reach.png`
-
-## Notes & Assumptions
-- Response curves learned from daily synthetic data (Part 3), smoothed (Savitzky–Golay) for stability.
-- Deduped reach modeled with a pairwise-overlap heuristic (Part 4).
-- CPMs held constant; budget fixed at $1,000,000.
-
+**Figures**  
+- `assets/p6_opt_spend_conversions.png`  
+- `assets/p6_marginal_roi.png`  
+- `assets/p6_equal_vs_opt_conversions.png`  
+- `assets/p6_equal_vs_opt_reach.png`
