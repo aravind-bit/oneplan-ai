@@ -24,8 +24,17 @@ def load_csv(p: Path):
         return None
 
 # --- Load artifacts (non-fatal if missing) ---
-summary = load_csv(DATA_DIR/"part6_equal_vs_optimized_summary.csv") or \
-          load_csv(DATA_DIR/"part5_equal_vs_optimized_summary.csv")
+# --- Load artifacts (non-fatal if missing) ---
+summary = None
+first_path = DATA_DIR / "part6_equal_vs_optimized_summary.csv"
+fallback_path = DATA_DIR / "part5_equal_vs_optimized_summary.csv"
+
+if (df := load_csv(first_path)) is not None:
+    summary = df
+elif (df := load_csv(fallback_path)) is not None:
+    summary = df
+else:
+    summary = None
 mroi    = load_csv(DATA_DIR/"marginal_roi_summary.csv")
 alloc_c = load_csv(DATA_DIR/"optimal_spend_conversions.csv")
 alloc_r = load_csv(DATA_DIR/"optimal_spend_reach.csv")
